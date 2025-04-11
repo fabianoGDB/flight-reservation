@@ -45,7 +45,7 @@ namespace IdentityApi.Features.GetNewToken
                 {
                     Id = _refreshToken.Id,
                     UserId = _user!.Id,
-                    Token = newRefreshToken,
+                    Token = newRefreshToken,    
                     ExpiresAt = DateTime.UtcNow.AddHours(12),
                 };
                 unityOfWork.RefreshToken.UpdateToken(_newRefreshTokenModel);
