@@ -17,6 +17,7 @@ namespace IdentityApi.Features.GetNewToken
             RuleFor(m => m.RefreshToken).NotEmpty();
         }
     }
+    //gerador de token
 
     public record Command(Request Request) : IRequest<Response>;
 
